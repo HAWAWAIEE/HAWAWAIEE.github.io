@@ -214,7 +214,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #000;
 }
 
 .mobile-nav {
@@ -279,7 +279,7 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: #000;
 }
 
 /* Header Top */
