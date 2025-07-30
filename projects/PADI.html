@@ -8,16 +8,13 @@
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
@@ -25,20 +22,12 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    * Template Name: Personal - v2.2.0
-    * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body data-gr-c-s-loaded="true">
 
-  <!-- ======= Portfolio Details ======= -->
   <main id="main">
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
@@ -47,31 +36,45 @@
 
           <div class="col-lg-12 portfolio-info">
             <br>
-            <h2 style="color:#000000">Sample-Efficient Policy Transfer for Inverse Design via Domain Interpolation</h2>
+            <h2 style="color:#000000">
+              <span class="lang-en">Sample-Efficient Policy Transfer for Inverse Design via Domain Interpolation</span>
+              <span class="lang-ko">도메인 보간을 통한 역설계의 샘플 효율적 정책 전이</span>
+            </h2>
             <br>
             <ul>
               <li><strong>Tech Stack</strong>: Python, Pytorch, Numpy, Pandas, Matplotlib, RL, TL, PPO, SAC</li>
-              <li><strong>Journal URL</strong>: Computers with Engineering,With Editor</li>
+              <li>
+                <strong>
+                  <span class="lang-en">Journal URL:</span>
+                  <span class="lang-ko">저널 URL:</span>
+                </strong>
+                <span class="lang-en">Computers with Engineering, With Editor</span>
+                <span class="lang-ko">Computers with Engineering, 심사 중</span>
+              </li>
             </ul>
             <br>
 
             <p>
-              Proposed and implemented the Policy Adaptation via Domain Interpolation (PADI) framework to address
-              negative transfer and sample inefficiency in policy transfer for inverse design problems. Achieved
-              significant reduction in required training steps—up to 84%—and mitigated performance drops during domain
-              transition by introducing intermediate domains for smoother adaptation.
+              <span class="lang-en">
+                Proposed and implemented the Policy Adaptation via Domain Interpolation (PADI) framework to address
+                negative transfer and sample inefficiency in policy transfer for inverse design problems. Achieved
+                significant reduction in required training steps—up to 84%—and mitigated performance drops during domain
+                transition by introducing intermediate domains for smoother adaptation.
+              </span>
+              <span class="lang-ko">
+                역설계 문제의 정책 전이에서 네거티브 전이와 샘플 비효율성을 해결하기 위해 PADI(Policy Adaptation via Domain Interpolation) 프레임워크를 제안하고
+                구현했습니다. 중간 도메인을 도입하여 더 부드러운 적응을 유도함으로써 필요한 훈련 단계를 최대 84%까지 크게 줄이고 도메인 전환 중 성능 저하를 완화했습니다.
+              </span>
             </p>
           </div>
 
         </div>
 
       </div>
-    </div><!-- End Portfolio Details -->
-  </main><!-- End #main -->
-
-  <!-- Vendor JS Files -->
+    </div>
+  </main>
   <script async="" src="//www.google-analytics.com/analytics.js"></script>
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
@@ -81,10 +84,32 @@
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/venobox/venobox.min.js"></script>
 
-  <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
   <script>if (window.self == window.top) { (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+
+  <script>
+    function setPopupLanguage() {
+      try {
+        const isChecked = parent.document.getElementById('lang-toggle-nav').checked;
+
+        const englishTexts = document.querySelectorAll('.lang-en');
+        const koreanTexts = document.querySelectorAll('.lang-ko');
+
+        if (isChecked) {
+          englishTexts.forEach(el => el.style.display = 'none');
+          koreanTexts.forEach(el => el.style.display = 'inline');
+        } else {
+          englishTexts.forEach(el => el.style.display = 'inline');
+          koreanTexts.forEach(el => el.style.display = 'none');
+        }
+      } catch (e) {
+        console.error("Could not access parent window properties:", e);
+      }
+    }
+
+    window.onload = setPopupLanguage;
+  </script>
 
 </body>
 

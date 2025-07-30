@@ -8,16 +8,13 @@
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="../assets/img/favicon.png" rel="icon">
   <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
@@ -25,20 +22,12 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    * Template Name: Personal - v2.2.0
-    * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body data-gr-c-s-loaded="true">
 
-  <!-- ======= Portfolio Details ======= -->
   <main id="main">
     <div id="portfolio-details" class="portfolio-details">
       <div class="container">
@@ -47,33 +36,47 @@
 
           <div class="col-lg-12 portfolio-info">
             <br>
-            <h2 style="color:#000000">Adversarial Reinforcement Learning for Crowd Navigation with Real-World Trajectory
-              Prediction</h2>
+            <h2 style="color:#000000">
+              <span class="lang-en">Adversarial Reinforcement Learning for Crowd Navigation with Real-World Trajectory
+                Prediction</span>
+              <span class="lang-ko">실제 궤적 예측을 통한 군중 항법을 위한 적대적 강화학습</span>
+            </h2>
             <br>
             <ul>
               <li><strong>Tech Stack</strong>: Unity, C#, Python, Pytorch, Numpy, Pandas, Matplotlib, RL, TL, GAN, ORCA,
                 CADRL, SARL, LSTM-RL</li>
-              <li><strong>Journal URL</strong>: On Progress</li>
+              <li>
+                <strong>
+                  <span class="lang-en">Journal URL:</span>
+                  <span class="lang-ko">저널 URL:</span>
+                </strong>
+                <span class="lang-en">On Progress</span>
+                <span class="lang-ko">진행 중</span>
+              </li>
             </ul>
             <br>
 
             <p>
-              Developing robust crowd navigation agents using reinforcement learning with real pedestrian trajectory
-              data. Established environments leveraging Unity and ML-Agents and integrated adversarial mechanisms for
-              generating challenging navigation patterns. Aims to bridge the gap between simulation and real-world
-              navigation in dynamic environments.
+              <span class="lang-en">
+                Developing robust crowd navigation agents using reinforcement learning with real pedestrian trajectory
+                data. Established environments leveraging Unity and ML-Agents and integrated adversarial mechanisms for
+                generating challenging navigation patterns. Aims to bridge the gap between simulation and real-world
+                navigation in dynamic environments.
+              </span>
+              <span class="lang-ko">
+                실제 보행자 궤적 데이터를 사용하여 강화학습으로 안정적인 군중 항법 에이전트를 개발합니다. Unity와 ML-Agents를 활용한 환경을 구축하고, 도전적인 항법 패턴을 생성하기 위한
+                적대적 메커니즘을 통합했습니다. 동적 환경에서 시뮬레이션과 실제 세계 항법 사이의 간극을 메우는 것을 목표로 합니다.
+              </span>
             </p>
           </div>
 
         </div>
 
       </div>
-    </div><!-- End Portfolio Details -->
-  </main><!-- End #main -->
-
-  <!-- Vendor JS Files -->
+    </div>
+  </main>
   <script async="" src="//www.google-analytics.com/analytics.js"></script>
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="../assets/vendor/php-email-form/validate.js"></script>
@@ -83,10 +86,39 @@
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../assets/vendor/venobox/venobox.min.js"></script>
 
-  <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
   <script>if (window.self == window.top) { (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+
+  <script>
+    // 이 함수는 팝업창이 열렸을 때 언어를 설정합니다.
+    function setPopupLanguage() {
+      try {
+        // 메인 페이지(parent)에 있는 토글 스위치를 찾아서 상태를 확인합니다.
+        const isChecked = parent.document.getElementById('lang-toggle-nav').checked;
+
+        const englishTexts = document.querySelectorAll('.lang-en');
+        const koreanTexts = document.querySelectorAll('.lang-ko');
+
+        // 메인 페이지의 토글 상태에 맞춰 언어를 보여주거나 숨깁니다.
+        if (isChecked) {
+          // 체크 O 상태일 때 -> 한국어를 보여줍니다.
+          englishTexts.forEach(el => el.style.display = 'none');
+          koreanTexts.forEach(el => el.style.display = 'inline');
+        } else {
+          // 체크 X 상태일 때 -> 영어를 보여줍니다.
+          englishTexts.forEach(el => el.style.display = 'inline');
+          koreanTexts.forEach(el => el.style.display = 'none');
+        }
+      } catch (e) {
+        // 혹시 모를 오류를 방지합니다. (예: 파일을 직접 열었을 때)
+        console.error("Could not access parent window properties:", e);
+      }
+    }
+
+    // 팝업이 열리면(페이지가 로드되면) 바로 언어 설정 함수를 실행합니다.
+    window.onload = setPopupLanguage;
+  </script>
 
 </body>
 
