@@ -529,7 +529,7 @@
             <h4>PADI</h4>
           </center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/twitteranalysis.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/PADI.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
 
               <div class="portfolio-links">
@@ -545,7 +545,7 @@
             <h4>SPACE v2</h4>
           </center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/iras.jpeg" class="img-fluid" alt="">
+            <img src="assets/img/project/SPACE2.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
 
               <div class="portfolio-links">
@@ -561,7 +561,7 @@
             <h4>PBRS Based Multidomain RL</h4>
           </center>
           <div class="portfolio-wrap">
-            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="">
+            <img src="assets/img/project/PBRS_RL.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
 
               <div class="portfolio-links">
@@ -752,39 +752,27 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    // 두 개의 토글 스위치를 미리 찾아둡니다.
     const mainToggle = document.getElementById('lang-toggle-main');
     const navToggle = document.getElementById('lang-toggle-nav');
 
-    /**
-     * 언어 상태를 동기화하고, 페이지 전체에 적용하는 '만능 해결사' 함수
-     * @param {Event} event - 클릭 이벤트 객체
-     */
     function syncAndApplyLanguage(event) {
-      // 1. 방금 클릭된 토글의 '체크 상태'를 가져옵니다. (true 또는 false)
       const isChecked = event.target.checked;
 
-      // 2. 두 토글의 상태를 방금 클릭된 상태로 강제 동기화시킵니다.
       mainToggle.checked = isChecked;
       navToggle.checked = isChecked;
 
-      // 3. 페이지의 모든 영어/한국어 텍스트를 찾아옵니다.
       const englishTexts = document.querySelectorAll('.lang-en');
       const koreanTexts = document.querySelectorAll('.lang-ko');
 
-      // 4. 체크 상태에 따라 페이지 전체의 언어를 변경합니다. (최종 수정)
       if (isChecked) {
-        // 체크 O 상태일 때 -> 한국어를 보여줍니다.
         englishTexts.forEach(el => el.style.display = 'none');
         koreanTexts.forEach(el => el.style.display = 'inline');
       } else {
-        // 체크 X 상태일 때 -> 영어를 보여줍니다.
         englishTexts.forEach(el => el.style.display = 'inline');
         koreanTexts.forEach(el => el.style.display = 'none');
       }
     }
 
-    // 5. 두 토글 스위치에 '만능 해결사' 함수를 똑같이 연결해 줍니다.
     mainToggle.addEventListener('change', syncAndApplyLanguage);
     navToggle.addEventListener('change', syncAndApplyLanguage);
   </script>
