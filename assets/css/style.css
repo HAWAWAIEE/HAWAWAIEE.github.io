@@ -91,7 +91,7 @@ h6 {
   color: #ff8c00;
 }
 
-#header h2 span {
+#header h2 .typing {
   color: #ff6600;
   border-bottom: 2px solid #ff8c00;
   padding-bottom: 6px;

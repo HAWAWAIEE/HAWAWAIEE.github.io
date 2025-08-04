@@ -73,7 +73,12 @@
     <div class="container">
 
       <h1><a href="index.html">LEE SEUNGHWAN</a></h1>
-      <h2 style="color:#000000">I'm <span class="typing" style="color:#12D640"></span></h2>
+      <!-- <h2 style="color:#000000">I'm <span class="typing" style="color:#12D640"></span></h2> -->
+      <h2 style="color:#000000">
+        <span class="lang-en">I'm </span>
+        <span class="lang-ko">저는 </span>
+        <span class="typing" style="color:#12D640"></span>
+      </h2>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header"> <span>Home</span></a></li>
@@ -740,12 +745,27 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["Gamer", "AI Engineer", "Developer"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
+    let typed;
+
+    function initTyped(isKorean = false) {
+      if (typed) {
+        typed.destroy();
+      }
+
+      const strings = isKorean
+        ? ["게이머입니다", "AI 엔지니어입니다", "개발자입니다"]
+        : ["Gamer", "AI Engineer", "Developer"];
+
+      typed = new Typed('.typing', {
+        strings: strings,
+        loop: true,
+        typeSpeed: 65,
+        backSpeed: 65
+      });
+    }
+
+    // 초기 설정
+    initTyped(false);
   </script>
 
   <!-- Template Main JS File -->
@@ -767,9 +787,13 @@
       if (isChecked) {
         englishTexts.forEach(el => el.style.display = 'none');
         koreanTexts.forEach(el => el.style.display = 'inline');
+        // 한국어 typing 효과로 변경
+        initTyped(true);
       } else {
         englishTexts.forEach(el => el.style.display = 'inline');
         koreanTexts.forEach(el => el.style.display = 'none');
+        // 영어 typing 효과로 변경
+        initTyped(false);
       }
     }
 
