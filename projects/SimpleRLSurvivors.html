@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Simple RL Survivors</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+    <main id="main">
+        <div id="portfolio-details" class="portfolio-details">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-12 portfolio-info">
+                        <br>
+                        <h2 style="color:#000000">
+                            <span class="lang-en">Simple RL Survivors : A Benchmark Environment for Deep Reinforcement
+                                Learning in Survivors-like Games</span>
+                            <span class="lang-ko">Simple RL Survivors : 심층 강화학습을 위한 서바이버 라이크 게임 벤치마크 환경</span>
+                        </h2>
+                        <br>
+                        <ul>
+                            <li><strong>Tech Stack</strong>: Unity, ML-Agent Toolkit, Python, Pytorch, Numpy, Pandas,
+                                Matplotlib, RL, PPO,
+                                SAC</li>
+                            <li>
+                                <strong>
+                                    <span class="lang-en">Journal URL:</span>
+                                    <span class="lang-ko">저널 URL:</span>
+                                </strong>
+                                <span class="lang-en">ICTC Workshop on Artificial Intelligence and Applications</span>
+                                <span class="lang-ko">ICTC Workshop on Artificial Intelligence and Applications</span>
+                            </li>
+                        </ul>
+                        <br>
+
+                        <p>
+                            <span class="lang-en">
+                                The 'Survivors-like' genre is an excellent testbed for reinforcement learning (RL) due
+                                to its focus on long-term strategy and interaction with numerous enemies, but a standard
+                                benchmark environment for research was unavailable. Therefore, I developed a benchmark
+                                environment, 'Simple RL Survivors,' using Unity and ML-Agents. To validate its
+                                effectiveness as a benchmark, I trained PPO and SAC agents. Both agents
+                                demonstrated successful learning, evidenced by a steady increase in cumulative rewards,
+                                which confirmed the environment's viability.
+                            </span>
+                            <span class="lang-ko">
+                                'Survivors-like' 장르는 장기적인 전략과 많은 적과의 상호작용에 초점을 맞추고 있지만, 연구를 위한 표준 벤치마크
+                                환경이 없었습니다. 이에 직접 Unity와 ML-Agents를 사용하여 벤치마크 환경인 'Simple RL Survivors'를 개발했습니다.
+                                환경의 실효성을 검증하고자 PPO와 SAC 강화학습 에이전트를 학습시킨 결과, 두 에이전트 모두 누적 보상이 꾸준히 상승하는
+                                성과를 보이며 벤치마크로서의 효용성을 성공적으로 입증했습니다.
+                            </span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="../assets/vendor/counterup/counterup.min.js"></script>
+    <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/venobox/venobox.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+
+    <script>if (window.self == window.top) { (function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+
+    <script>
+        function setPopupLanguage() {
+            try {
+                const isChecked = parent.document.getElementById('lang-toggle-nav').checked;
+
+                const englishTexts = document.querySelectorAll('.lang-en');
+                const koreanTexts = document.querySelectorAll('.lang-ko');
+
+                if (isChecked) {
+                    englishTexts.forEach(el => el.style.display = 'none');
+                    koreanTexts.forEach(el => el.style.display = 'inline');
+                } else {
+                    englishTexts.forEach(el => el.style.display = 'inline');
+                    koreanTexts.forEach(el => el.style.display = 'none');
+                }
+            } catch (e) {
+                console.error("Could not access parent window properties:", e);
+            }
+        }
+
+        window.onload = setPopupLanguage;
+    </script>
+
+</body>
+
+</html>
